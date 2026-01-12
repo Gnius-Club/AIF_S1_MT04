@@ -3,20 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Playbook: Sesión 4 - 1ro Secundaria</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Playbook-S1-TM4</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
     <header>
-        <h1><span class="book-icon">📋</span> <strong>Playbook: Sesión 4 - 1ro Secundaria</strong></h1>
+        <h1><span class="book-icon">📋</span> <strong>Playbook: Misión 4 - 1o de Secundaria</strong></h1>
         <div class="header-widgets">
             <div class="timer-container">
-                <span id="timer">⏱️ 00:00</span>
-                <button id="startStop">Start</button>
-                <button id="reset">Reset</button>
+                <span id="global-timer">⏱️ 40:00</span>
+                <button id="global-start-stop">Start</button>
+                <button id="global-reset">Reset</button>
             </div>
             <div class="theme-toggle">
                 <i class="fas fa-sun"></i>
@@ -28,7 +27,6 @@
             </div>
         </div>
     </header>
-
     <div class="main-container">
         <aside class="activity-list">
             <h2>Actividades</h2>
@@ -40,260 +38,406 @@
                 <li><a href="#activity-4">4</a></li>
                 <li><a href="#activity-5">5</a></li>
             </ul>
-
-            <div class="sidebar-info">
-                <p>💡 Cada actividad está cuidadosamente diseñada para involucrar a los estudiantes.</p>
-                <p>⏱️ Se proporcionan estimaciones de tiempo para cada actividad para ayudarle a mantener el rumbo.</p>
-            </div>
         </aside>
-
         <main class="content">
             <div class="progress-bar">
                 <div class="progress"></div>
             </div>
-
-            <button id="toggle-dialogues">Mostrar todos los diálogos</button>
-
-            <!-- SECCIÓN "DE UN VISTAZO" (ANTES ACTIVITY-0) -->
+            <!-- ACTIVIDAD 0: DE UN VISTAZO -->
             <div class="activity-card" id="activity-0">
-                <h2><span class="book-icon">📝</span> De un Vistazo: Creando Volumen con Estrategia IA</h2>
-                <p class="overview-subtitle">Resumen rápido de objetivos, materiales y preparación para el facilitador.</p>
-                <div class="overview-table-container">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th style="width: 50%;">Objetivos, Tácticas y Entregable</th>
-                                <th style="width: 50%;">Materiales Específicos y Preparación Previa</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>
-                                    <strong>Objetivos de aprendizaje:</strong>
-                                    <p><strong>Objetivo general de la sesión:</strong> Que los estudiantes aprendan a modelar sólidos 3D en Onshape utilizando las herramientas de 'Extrusión' y 'Revolución', y a justificar estratégicamente la elección de la herramienta más eficiente para su diseño.</p>
-                                    <ul>
-                                        <li>Que los estudiantes aprendan a crear sólidos 3D con '<strong>Extrusión</strong>' y '<strong>Revolución</strong>'.</li>
-                                        <li>Que comprendan que la elección de herramienta es una decisión <strong>estratégica</strong> que afecta la <strong>eficiencia</strong>.</li>
-                                        <li>Que sean capaces de justificar formalmente su elección de <strong>estrategia de modelado</strong>.</li>
-                                    </ul>
-                                    <strong>Secuencia de Clase:</strong>
-                                     <ul>
-                                        <li>⚡ <strong>Actividad 1:</strong> Saludo de IA y Contexto (3 min)</li>
-                                        <li>⚡ <strong>Actividad 2:</strong> "I Can Statement" y Presentación del Desafío (5 min)</li>
-                                        <li>⚡ <strong>Actividad 3:</strong> AI GYM (Planificación de Procesos) (12 min)</li>
-                                        <li>⚡ <strong>Actividad 4:</strong> Brain Spark (Modelado y Justificación) (15 min)</li>
-                                        <li>⚡ <strong>Actividad 5:</strong> Gnius STORM (Cierre de Sesión) (5 min)</li>
-                                    </ul>
-                                    <strong>Entregable Clave:</strong>
-                                    <ul>
-                                        <li>Una primera versión 3D sólida de la pieza del proyecto, creada en Onshape.</li>
-                                        <li>Una nueva sección en su "Brief de Diseño" titulada "Estrategia de Modelado 3D", que describe y justifica la herramienta elegida (Extrusión o Revolución).</li>
-                                    </ul>
-                                </td>
-                                <td>
-                                    <strong>Materiales Específicos:</strong>
-                                    <ul>
-                                        <li>Proyector o pantalla interactiva.</li>
-                                        <li>Presentación de la sesión (10 Diapositivas).</li>
-                                        <li>Conexión a internet estable.</li>
-                                        <li>Cuentas de Onshape para cada alumno.</li>
-                                        <li>Chat "Agente Gnius" (Xolo) activo y funcionando.</li>
-                                    </ul>
-                                    <strong>Preparación Previa para ESTA Sesión:</strong>
-                                    <ol>
-                                        <li><strong>Revisión de Misión (Interna):</strong>
-                                            <ul>
-                                                <li>Verificar la conexión a internet y el correcto funcionamiento de Onshape y Xolo.</li>
-                                                <li>Tener las diapositivas listas.</li>
-                                            </ul>
-                                        </li>
-                                        <li><strong>Familiarización:</strong> Revisar la diferencia conceptual y práctica entre 'Extrude' y 'Revolve'. Entender la importancia de la "eficiencia" como principio de diseño.</li>
-                                        <li><strong>Preparación de Ejemplos:</strong> Tener un archivo de Onshape con un croquis que pueda demostrar tanto la extrusión como la revolución (ej. un perfil simple de una rueda). Esté preparado para mostrar cómo crear la misma forma general con ambos métodos y discutir cuál es más eficiente.</li>
-                                    </ol>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                <h2><span class="book-icon">📝</span> De un Vistazo: Comando Central</h2>
+                <p class="overview-subtitle">Todo lo que necesitas para preparar y ejecutar esta misión en minutos.</p>
+                
+                <div class="command-section">
+                    <h3>🎯 Objetivo de Aprendizaje</h3>
+                    <div class="objective-box">
+                        <p><strong>Los estudiantes podrán:</strong> usar Onshape para realizar modelado 3D mediante extrusión y revolución para crear volúmenes y comprender la descomposición de problemas y la eficiencia en la estrategia de diseño.</p>
+                    </div>
+                </div>
+                <div class="command-section xolo-prompt">
+                    <h3>🤖 Prompt de Referencia para XOLO (Solo para Maestro)</h3>
+                    <div class="prompt-box">
+                        <div class="prompt-header">
+                            <span class="prompt-label">⚠️ NOTA: XOLO ya conoce el tema de esta misión. Este prompt es SOLO de referencia en caso de emergencia técnica:</span>
+                            <button class="copy-btn" onclick="copyPrompt('main-prompt')">
+                                <i class="fas fa-copy"></i> Copiar
+                            </button>
+                        </div>
+                        <pre id="main-prompt">Explícame cómo se crea volumen a partir de un croquis y cuál es la diferencia estratégica entre extrusión y revolución en el modelado 3D. Analicemos criterios para decidir la mejor secuencia de modelado según la geometría del objeto.</pre>
+                    </div>
+                </div>
+                <div class="command-section">
+                    <h3>⚡ Puntos Esenciales de la Misión</h3>
+                    <div class="essentials-grid">
+                        <div class="essential-card">
+                            <div class="essential-icon">🎓</div>
+                            <h4>Concepto Clave</h4>
+                            <p>Estrategia de Diseño: Es planear el camino más inteligente para construir una pieza 3D, dividiéndola en partes simples y lógicas.</p>
+                        </div>
+                        <div class="essential-card">
+                            <div class="essential-icon">🔧</div>
+                            <h4>Habilidad Técnica</h4>
+                            <p>Usar Onshape para crear formas con volumen usando herramientas de estirar (extrusión) y girar (revolución).</p>
+                        </div>
+                        <div class="essential-card">
+                            <div class="essential-icon">🧪</div>
+                            <h4>Experimentación</h4>
+                            <p>Probar con diferentes secuencias de modelado para entender limitaciones en la edición y eficiencia del diseño.</p>
+                        </div>
+                        <div class="essential-card">
+                            <div class="essential-icon">💬</div>
+                            <h4>Interacción con XOLO</h4>
+                            <p>XOLO ya conoce a cada estudiante y el tema de hoy. Solo abren el chat y comienzan a aprender. Tú guías el timing y motivación.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="command-section">
+                    <h3>📦 Checklist de Materiales</h3>
+                    <div class="materials-checklist">
+                        <label><input type="checkbox"> Proyector/pantalla + presentación (5 diapositivas)</label>
+                        <label><input type="checkbox"> Internet estable + Gnius Space con XOLO activo</label>
+                        <label><input type="checkbox"> Computadora o Laptop (1 por estudiante)</label>
+                        <label><input type="checkbox"> Acceso a Onshape (https://www.onshape.com/) con cuenta activa</label>
+                        <label><input type="checkbox"> Mouse externo (recomendado para modelado 3D)</label>
+                        <label><input type="checkbox"> ⚠️ Esta misión usa diseño 3D basado en bocetos y operaciones paramétricas en Onshape</label>
+                        <label><input type="checkbox"> 📋 Para modelar: Crear un Sketch → Seleccionar plano → Dibujar → Aplicar Extrude o Revolve</label>
+                    </div>
+                    <p class="care-reminder"><strong>🛡️ Cuidado del equipo:</strong> Mantener el equipo de cómputo limpio, manejar con cuidado periféricos como el mouse y cerrar sesión al terminar.</p>
+                </div>
+                <div class="command-section">
+                    <h3>🗓️ Secuencia de la Misión (40 min)</h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-dot">1</div>
+                            <div class="timeline-content">
+                                <strong>Intro a la Misión</strong>
+                                <span class="time-badge">2 min</span>
+                                <p>Bienvenida, I Can Statement y contexto de la misión.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot">2</div>
+                            <div class="timeline-content">
+                                <strong>A.I. Gym</strong>
+                                <span class="time-badge">8 min</span>
+                                <p>Los estudiantes abren el chat con XOLO y aprenden sobre estrategia de diseño y creación de volúmenes (sin prompt específico).</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot">3</div>
+                            <div class="timeline-content">
+                                <strong>Brain Spark</strong>
+                                <span class="time-badge">20 min</span>
+                                <p>Idear, construir y experimentar un programa con XOLO.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot">4</div>
+                            <div class="timeline-content">
+                                <strong>Gnius STORM - Compartir</strong>
+                                <span class="time-badge">5 min</span>
+                                <p>Demostración y reflexión en parejas.</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot">5</div>
+                            <div class="timeline-content">
+                                <strong>Entrega de Evidencias</strong>
+                                <span class="time-badge">5 min</span>
+                                <p>Subir capturas a Gnius Space y finalizar misión.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="command-section">
+                    <h3>🚨 Resolución Rápida de Problemas</h3>
+                    <div class="troubleshooting-list">
+                        <ul>
+                            <li><strong>Si los alumnos no pueden ingresar a Gnius Space:</strong> Activa XOLO SOS en <a href="https://xolo.gnius.club" target="_blank">xolo.gnius.club</a> para continuar la misión sin interrumpir la clase.</li>
+                            <li><strong>Si Onshape carga lento:</strong> Verificar la conexión a internet y cerrar pestañas innecesarias del navegador.</li>
+                            <li><strong>Si no puedes ver el volumen:</strong> Asegúrate de que el boceto (sketch) esté completamente cerrado y no tenga líneas sueltas.</li>
+                            <li><strong>Si hay errores en el código:</strong> Recordar a los estudiantes que XOLO puede ayudar a depurar. Pídeles que copien el error y se lo muestren a XOLO.</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <!-- FIN DE LA SECCIÓN "DE UN VISTAZO" -->
-
+            <!-- ACTIVIDAD 1: INTRO A LA MISIÓN -->
             <div class="activity-card" id="activity-1">
-                <h2>⚡ Actividad 1: Saludo de IA y Contexto ⏰ 3 minutos</h2>
-                <p>Establecer un tono profesional e introducir el concepto de modelado 3D como un acto de escultura digital estratégica.</p>
-                <div class="steps">
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 1: Bienvenida y Contexto de la Misión ⏰ 1 minuto</h3>
-                            <p>(Proyectar Diapositiva 2) El facilitador introduce la sesión como el paso de arquitecto 2D a escultor digital 3D.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">Buen día, directores. Tienen una base <strong>2D</strong> robusta e inteligente. Hoy, la proyectaremos al espacio <strong>tridimensional</strong>. Pero no lo haremos al azar. En <strong>diseño profesional</strong>, la <strong>eficiencia</strong> es un recurso. Aprenderán a analizar una forma y a determinar la ruta de modelado más lógica. Hoy pasamos de ser <strong>arquitectos 2D</strong> a <strong>escultores digitales estratégicos</strong>.</p>
-                            </div>
-                        </div>
+                <div class="activity-header">
+                    <h2>🚀 Actividad 1: Intro a la Misión</h2>
+                    <div class="activity-timer">
+                        <span class="activity-duration">⏱️ 2:00</span>
+                        <button class="timer-start-btn" data-duration="120">Iniciar</button>
                     </div>
-                      <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 2: Activación de la IA ⏰ 2 minutos</h3>
-                            <p>El facilitador guía a los alumnos para que inicien su sesión de trabajo con Xolo.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">Procedan a iniciar su sesión de trabajo. En el chat, saluden a Xolo con <strong>'Hola Xolo, listo para la Misión 4', seguido de su nombre, perfil y gustos personales.</strong> Esperen su confirmación para continuar.</p>
-                            </div>
-                        </div>
+                </div>
+                <div class="roles-section">
+                    <div class="role-card role-teacher">
+                        <h4>👨‍🏫 Rol del Maestro</h4>
+                        <ul>
+                            <li>Dar la bienvenida con energía.</li>
+                            <li>Pedir a los alumnos que ingresen a Gnius Space.</li>
+                            <li>Proyecta diapositiva 1 con el I Can Statement.</li>
+                            <li>Motiva: "¡Hoy le daremos vida y volumen a sus ideas en 3D!".</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-xolo">
+                        <h4>🤖 Rol de XOLO</h4>
+                        <ul>
+                            <li>XOLO ya está listo y conoce a cada estudiante.</li>
+                            <li>Sabe que hoy toca aprender sobre Estrategia de modelado 3D y eficiencia.</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-student">
+                        <h4>👦 Rol del Alumno</h4>
+                        <ul>
+                            <li>Escucha la misión del día.</li>
+                            <li>Loguearse en Gnius Space.</li>
+                            <li>Preparación para trabajar en parejas.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="slide-reference">
+                    <h4>📊 Diapositiva 1: I Can Statement</h4>
+                    <div class="slide-content">
+                        <p><strong>🎯 Hoy seré capaz de:</strong></p>
+                        <p class="highlight-text">🤖 A crear volúmenes inteligentes para que sus diseños sean profesionales y fáciles de modificar.</p>
+                        <p><strong>Aplicación real:</strong> Los ingenieros y diseñadores industriales en empresas como Tesla o SpaceX usan esta tecnología para crear piezas complejas de forma eficiente.</p>
+                        <p><strong>Tu aliado:</strong> XOLO ya sabe qué vas a aprender hoy. ¡Solo abre el chat y comienza!</p>
                     </div>
                 </div>
             </div>
-
+            <!-- ACTIVIDAD 2: A.I. GYM -->
             <div class="activity-card" id="activity-2">
-                <h2>⚡ Actividad 2: "I Can Statement" y Presentación del Desafío ⏰ 5 minutos</h2>
-                <p>Presentar las herramientas 3D fundamentales y el desafío estratégico de elegir la correcta.</p>
-                <div class="steps">
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 1: Presentación del Salto a 3D y el Desafío ⏰ 3 minutos</h3>
-                            <p>(Proyectar Diapositiva 3) El facilitador presenta las herramientas 'Extrusión' y 'Revolución' y el desafío estratégico.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">Hasta ahora, han trabajado en un plano. Hoy damos el salto al <strong>volumen</strong>. Les presentaré las dos herramientas 3D más fundamentales: '<strong>Extrusión</strong>', que es <b>como si estuviéramos haciendo una masa de pizza</b>, y '<strong>Revolución</strong>', que es <b>como tornear arcilla</b>. Su misión no es solo aprender a hacer clic en los botones, es entender <strong>cuándo</strong> usar cada uno. Para un objeto como una botella, la elección correcta puede ahorrar horas. Deberán crear su primera versión 3D y, más importante, justificar su <strong>estrategia</strong>.</p>
-                            </div>
-                        </div>
+                <div class="activity-header">
+                    <h2>🧠 Actividad 2: A.I. Gym</h2>
+                    <div class="activity-timer">
+                        <span class="activity-duration">⏱️ 8:00</span>
+                        <button class="timer-start-btn" data-duration="480">Iniciar</button>
                     </div>
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 2: Declaración del "I Can Statement" ⏰ 2 minutos</h3>
-                            <p>(Proyectar Diapositiva 4) El facilitador presenta el objetivo de aprendizaje de la sesión.</p>
+                </div>
+                <div class="roles-section">
+                    <div class="role-card role-teacher">
+                        <h4>👨‍🏫 Rol del Maestro</h4>
+                        <ul>
+                            <li>Proyecta diapositiva 2.</li>
+                            <li>Indica: "Abran el chat con XOLO y salúdenlo. Él ya sabe qué les va a enseñar hoy."</li>
+                            <li>Circula para asegurar que todos interactúan con XOLO.</li>
+                            <li>Si alguien tiene dudas, recuérdale: "Pregúntale a XOLO, él te puede explicar de otra forma".</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-xolo">
+                        <h4>🤖 Rol de XOLO</h4>
+                        <p class="xolo-status">✅ XOLO ACTIVO</p>
+                        <ul>
+                            <li>Reconoce al estudiante y sus preferencias de aprendizaje.</li>
+                            <li>Explica cómo se crea volumen a partir de un dibujo plano usando extrusión y revolución.</li>
+                            <li>Introduce el concepto de descomposición de problemas para elegir la mejor estrategia de diseño.</li>
+                            <li>Responde dudas sobre los conceptos.</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-student">
+                        <h4>👦 Rol del Alumno</h4>
+                        <ul>
+                            <li>Abrir el chat con XOLO y saludarlo.</li>
+                            <li>Aprender a usar Onshape para transformar bocetos en objetos 3D.</li>
+                            <li>Aprender sobre la eficiencia y estrategia al diseñar.</li>
+                            <li>Despejar todas sus dudas preguntando a XOLO.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="slide-reference">
+                    <h4>📊 Diapositiva 2: A.I. GYM</h4>
+                    <div class="slide-content">
+                        <p><strong>💬 Abre el chat con XOLO y salúdalo:</strong></p>
+                        <div class="prompt-box">
+                            <pre>"¡Hola XOLO! Estoy listo para aprender."</pre>
                         </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">El objetivo de hoy es claro. Al final de la sesión, podrán afirmar: <strong>'Yo puedo crear un modelo 3D sólido usando 'Extrusión' o 'Revolución', y puedo explicar estratégicamente por qué un método es más eficiente que otro para mi diseño específico.'</strong></p>
-                            </div>
-                        </div>
+                        <p class="highlight-text" style="margin-top: 1rem;">✨ XOLO ya sabe quién eres y qué tema toca hoy. ¡Solo empieza a conversar!</p>
+                        <p class="highlight-text">🎯 Objetivo: Aprender a usar Onshape para crear volúmenes y entender la estrategia de diseño.</p>
+                    </div>
+                </div>
+                
+                <div class="optional-script">
+                    <button class="collapsible-button">📖 Ver guion detallado (opcional)</button>
+                    <div class="collapsible-content">
+                        <p class="dialogue assistant">Ahora vamos a entrar al mundo del diseño profesional. Abran su chat con XOLO y denle un saludo. XOLO ya los conoce y sabe exactamente qué les va a enseñar hoy sobre cómo pasar de dibujos planos a objetos con volumen. No necesitan escribir un prompt especial, solo empiecen a platicar con él. Pregúntenle sobre la diferencia entre extrusión y revolución, y cómo decidir cuál usar. XOLO es el experto, así que aprovechen para despejar cualquier duda técnica o conceptual antes de empezar a modelar. XOLO ya los conoce y sabe exactamente qué les va a enseñar hoy. No necesitan escribir un prompt especial, solo empiecen a platicar con él.</p>
                     </div>
                 </div>
             </div>
-
+            <!-- ACTIVIDAD 3: BRAIN SPARK -->
             <div class="activity-card" id="activity-3">
-                <h2>⚡ Actividad 3: AI GYM (Planificación de Procesos) ⏰ 12 minutos</h2>
-                <p>Fase de diálogo con Xolo para entender el modelado como un "proceso" o "receta" y simular un análisis de eficiencia.</p>
-                <div class="steps">
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 1: Extrusión vs. Revolución ⏰ 6 minutos</h3>
-                            <p>(Proyectar Diapositiva 5) Los estudiantes consultan a Xolo sobre su rol como "Planificador de Procesos" y las diferencias estratégicas entre las herramientas.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">Entramos al AI GYM. El rol de Xolo hoy es el de un <strong>planificador de procesos</strong>, pensando en "<strong>recetas</strong>" de diseño. Para entender las opciones, consúltenle: <strong>'Xolo, explícame la diferencia estratégica entre Extrusión y Revolución, y para qué tipo de formas es ideal cada una.'</strong></p>
-                            </div>
-                        </div>
+                <div class="activity-header">
+                    <h2>💡 Actividad 3: Brain Spark</h2>
+                    <div class="activity-timer">
+                        <span class="activity-duration">⏱️ 20:00</span>
+                        <button class="timer-start-btn" data-duration="1200">Iniciar</button>
                     </div>
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 2: Simulación Estratégica y Consulta Técnica ⏰ 6 minutos</h3>
-                            <p>(Proyectar Diapositiva 6) El facilitador verbaliza la simulación de Xolo y dirige a los estudiantes hacia el Onshape AI Advisor para la ejecución técnica.</p>
+                </div>
+                <div class="roles-section">
+                    <div class="role-card role-teacher">
+                        <h4>👨‍🏫 Rol del Maestro</h4>
+                        <ul>
+                            <li>Proyecta la diapositiva 3.</li>
+                            <li>Indica: "Pidan a XOLO que los ayude a idear un proyecto. Cuando tengan su GCS, pásenlo a bloques en MakeCode, prueben en el simulador y luego con el hardware real".</li>
+                            <li>Entrega por parejas los diseños en Onshape conforme los alumnos prueben su GCS en el simulador.</li>
+                            <li>Si hay errores, recuerda: "Pregúntenle a XOLO, él los ayuda a depurar".</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-xolo">
+                        <h4>🤖 Rol de XOLO</h4>
+                        <p class="xolo-status">✅ XOLO ACTIVO</p>
+                        <ul>
+                            <li>Ayuda a desarrollar una idea y un VIBE que aplique extrusión y revolución de forma estratégica.</li>
+                            <li>Entrega el GCS de la idea del genio.</li>
+                            <li>Resuelve errores de sintaxis o lógica.</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-student">
+                        <h4>👦 Rol del Alumno</h4>
+                        <ul>
+                            <li>Trabajar con XOLO una idea y un VIBE para usar herramientas de modelado 3D.</li>
+                            <li>Traducir el GCS de XOLO a bloques en MakeCode.</li>
+                            <li>Depurar su programa con XOLO si hay errores.</li>
+                            <li>Revisar su modelo en el visor 3D de Onshape y probar cambios y probar.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="slide-reference">
+                    <h4>📊 Diapositiva 3: Brain Spark</h4>
+                    <div class="slide-content">
+                        <p><strong>1. 💬 Pide a XOLO que te ayude a crear:</strong></p>
+                        <div class="prompt-box">
+                            <pre>"Ayúdame a crear la primera versión 3D de mi proyecto en Onshape. Quiero justificar la secuencia de operaciones que elijo y reflexionar por qué es la más eficiente para mi diseño."</pre>
                         </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">Para que entiendan el poder de esta decisión, Xolo puede simular un <strong>análisis de eficiencia</strong>. Por ejemplo, para una rueda de coche, podría determinar que una '<strong>Revolución</strong>' es un 92% más eficiente que múltiples '<strong>Extrusiones</strong>'. Ahora que saben la <strong>estrategia</strong>, para la ejecución técnica, el proceso es el mismo: consulten al <strong>Onshape AI Advisor</strong> sobre 'How to use the Extrude tool' o 'How to use the Revolve tool' y usen la Biblioteca si es necesario.</p>
-                            </div>
-                        </div>
+                        <p style="margin-top: 1.5rem;"><strong>2. 🔬 Experimenta y descubre con tu programa:</strong></p>
+                        <ul>
+                            <li>¿Tu modelo tiene el volumen y la forma que imaginaste al inicio?</li>
+                            <li>¿Qué pasa si intentas cambiar una medida en el boceto original después de haber aplicado la extrusión?</li>
+                            <li>¿Funciona igual crear un cilindro por extrusión de un círculo que por revolución de un rectángulo?</li>
+                            <li>Al dividir tu objeto en partes simples, ¿cómo aplicaste la descomposición de problemas en tu diseño?</li>
+                            <li>¿Por qué elegir una secuencia de pasos ordenada hace que tu diseño sea más eficiente y fácil de corregir?</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="optional-script">
+                    <button class="collapsible-button">📖 Ver guion detallado (opcional)</button>
+                    <div class="collapsible-content">
+                        <p class="dialogue assistant">¡Es hora de crear! Vamos a usar todo lo que platicamos con XOLO para construir nuestra primera versión 3D. El flujo es sencillo: primero ideamos con XOLO, definimos el VIBE de nuestro proyecto, recibimos el GCS (Guía de Construcción Paso a Paso) y luego lo llevamos a Onshape. Por ejemplo, podrían diseñar un soporte para audífonos usando extrusión para la base y revolución para el poste central. Recuerden las preguntas de experimentación: ¿es esta la forma más eficiente de hacerlo? Si algo no sale como esperaban o el software les marca un error, pregúntenle a XOLO, él los ayudará a depurar su estrategia de diseño. Si tienen errores o dudas, pregúntenle a XOLO, él los ayudará a depurar.</p>
+                    </div>
+                </div>
+                <div class="challenge-prompt">
+                    <h4>🚀 Prompt de Desafío (para quienes terminen rápido)</h4>
+                    <div class="prompt-box">
+                        <p><strong>Si ya experimentaste con todo, pregunta a XOLO:</strong></p>
+                        <p class="challenge-text">"Ya probé con extrusión y revolución básica. ¿Puedes enseñarme cómo hacer que mi diseño use redondeos (fillets) o vaciados (shell) para que se vea más profesional?"</p>
                     </div>
                 </div>
             </div>
-
+            <!-- ACTIVIDAD 4: GNIUS STORM - COMPARTIR -->
             <div class="activity-card" id="activity-4">
-                 <h2>⚡ Actividad 4: Brain Spark (Modelado y Justificación) ⏰ 15 minutos</h2>
-                <p>Fase de trabajo práctico donde los estudiantes eligen una estrategia, la ejecutan y la documentan.</p>
-                <div class="steps">
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 1: Diálogo Estratégico y Ejecución Técnica ⏰ 10 minutos</h3>
-                            <p>(Proyectar Diapositiva 7) Los estudiantes dialogan con Xolo para definir su "receta" de modelado y luego la ejecutan en Onshape.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">Ahora, al Brain Spark. Primero, describan su objeto a Xolo y pregúntenle: <strong>'¿Cuál es la estrategia o receta de modelado más eficiente para mi [nombre del objeto]?'</strong>. Una vez tengan su <strong>estrategia</strong>, abran Onshape. Usando el ciclo de consulta, apliquen la herramienta recomendada para crear su primer <strong>cuerpo sólido</strong>.</p>
-                            </div>
-                        </div>
+                <div class="activity-header">
+                    <h2>⚡ Actividad 4: Gnius STORM - Compartir y Reflexionar</h2>
+                    <div class="activity-timer">
+                        <span class="activity-duration">⏱️ 5:00</span>
+                        <button class="timer-start-btn" data-duration="300">Iniciar</button>
                     </div>
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 2: Documentación y Justificación ⏰ 5 minutos</h3>
-                            <p>(Proyectar Diapositiva 8) Los estudiantes documentan y justifican su elección en su brief de diseño.</p>
+                </div>
+                <div class="roles-section">
+                    <div class="role-card role-teacher">
+                        <h4>👨‍🏫 Rol del Maestro</h4>
+                        <ul>
+                            <li>Organiza las parejas para compartir.</li>
+                            <li>Gestiona los tiempos: 2 min demo + 2 min reflexión + 1 min cierre.</li>
+                            <li>Facilita retroalimentación constructiva.</li>
+                            <li>Cierra con reflexión sobre aplicaciones reales.</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-xolo">
+                        <h4>🤖 Rol de XOLO</h4>
+                        <p class="xolo-status">⏸️ XOLO EN ESPERA</p>
+                        <ul>
+                            <li>Disponible solo si hay dudas finales urgentes.</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-student">
+                        <h4>👦 Rol del Alumno</h4>
+                        <ul>
+                            <li>Demuestra su programa funcionando a otra pareja.</li>
+                            <li>Explica qué operaciones de modelado funcionaron bien.</li>
+                            <li>Comparte un descubrimiento interesante.</li>
+                            <li>Da retroalimentación positiva al compañero.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="slide-reference">
+                    <h4>📊 Diapositiva 4: Think-Pair-Share</h4>
+                    <div class="slide-content tps-structure">
+                        <div class="tps-phase">
+                            <h4>🤔 THINK (30 seg)</h4>
+                            <p>Reflexión individual: ¿Qué herramientas de volumen funcionaron mejor para tu diseño? ¿Qué te sorprendió de la revolución?</p>
                         </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                 <p class="dialogue assistant">Un modelo sin justificación está incompleto. Abran su documento de <strong>Brief de Diseño</strong>. Creen una nueva sección titulada "<strong>Estrategia de Modelado 3D</strong>". Ahí, describan la secuencia de operaciones que eligieron y, lo más importante, <strong>justifiquen</strong> por qué eligieron esa herramienta (ej. 'Elegí la <strong>extrusión</strong> porque mi objeto tiene un perfil prismático y no posee <strong>simetría rotacional</strong>').</p>
-                                 <p>Nota para el Docente: Recuérdeles a los estudiantes que deben abrir el mismo documento de 'Brief de Diseño' que crearon en la Misión 1. Deben agregar un nuevo título: 'Estrategia de Modelado 3D'.</p>
-                            </div>
+                        <div class="tps-phase">
+                            <h4>👥 PAIR (2 min)</h4>
+                            <p>Con otra pareja: Demuestren su programa y expliquen su experiencia</p>
+                            <p class="highlight-text">Frase guía: "Mi diseño usó extrusión y revolución para crear las piezas. Me sorprendió que cambiar el boceto actualiza todo el modelo 3D automáticamente."</p>
+                        </div>
+                        <div class="tps-phase">
+                            <h4>💬 SHARE (2 min)</h4>
+                            <p>Retroalimentación mutua y cierre del maestro.</p>
                         </div>
                     </div>
                 </div>
             </div>
-
+            <!-- ACTIVIDAD 5: ENTREGA DE EVIDENCIAS -->
             <div class="activity-card" id="activity-5">
-                <h2>⚡ Actividad 5: Gnius STORM (Cierre de Sesión) ⏰ 5 minutos</h2>
-                <p>Fase final para compartir y justificar las estrategias de modelado, y reflexionar sobre la importancia de la eficiencia en el diseño.</p>
-                <div class="steps">
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 1: Think (Reflexión Individual) ⏰ 1 minuto</h3>
-                            <p>(Proyectar Diapositiva 9) El facilitador guía una reflexión individual sobre la decisión estratégica tomada.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">
-                                     Tiempo. Tómense un minuto para preparar su justificación: <strong>¿Por qué eligieron Extrusión o Revolución? ¿Consideraron la otra opción y por qué la descartaron? ¿Cómo influyó el análisis de Xolo en su decisión?</strong>
-                                </p>
-                            </div>
-                        </div>
+                <div class="activity-header">
+                    <h2>✅ Actividad 5: Entrega de Evidencias</h2>
+                    <div class="activity-timer">
+                        <span class="activity-duration">⏱️ 5:00</span>
+                        <button class="timer-start-btn" data-duration="300">Iniciar</button>
                     </div>
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 2: Pair (Discusión y Justificación) ⏰ 2 minutos</h3>
-                            <p>Los estudiantes comparten sus modelos 3D y justifican su estrategia en parejas.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">
-                                    En parejas, compartan sus pantallas. Muestren su modelo 3D. Lean en voz alta su <strong>justificación</strong> a su compañero. Expliquen por qué su elección fue la más <strong>eficiente</strong>.
-                                </p>
-                            </div>
-                        </div>
+                </div>
+                <div class="roles-section">
+                    <div class="role-card role-teacher">
+                        <h4>👨‍🏫 Rol del Maestro</h4>
+                        <ul>
+                            <li>Proyecta diapositiva 5 con las instrucciones.</li>
+                            <li>Guía a los estudiantes para tomar las capturas.</li>
+                            <li>Asegura que todos suban sus evidencias a Gnius Space.</li>
+                            <li>Felicita al grupo por completar la misión.</li>
+                        </ul>
                     </div>
-                    <div class="step-card">
-                        <div class="step-content">
-                            <h3>Paso 3: Share (Síntesis y Cierre) ⏰ 2 minutos</h3>
-                            <p>(Proyectar Diapositiva 10) El facilitador recoge las justificaciones y consolida el aprendizaje de la sesión.</p>
-                        </div>
-                        <div class="collapsible">
-                            <button type="button" class="collapsible-button">Diálogo Sugerido</button>
-                            <div class="collapsible-content">
-                                <p class="dialogue assistant">
-                                    Volvemos al grupo. La pregunta clave para todos: <strong>Justifiquen su estrategia.</strong> (Escucha 1-2 justificaciones). Excelente. Han dado vida a sus diseños. Y más importante, no lo han hecho a ciegas. Han tomado su primera decisión como <strong>ingenieros de diseño</strong>: han elegido la ruta más <strong>eficiente</strong>. Este <strong>modelo 3D</strong> es el bloque fundamental. En las próximas misiones, empezaremos a refinarlo.
-                                </p>
-                            </div>
-                        </div>
+                    <div class="role-card role-xolo">
+                        <h4>🤖 Rol de XOLO</h4>
+                        <p class="xolo-status">⭕ XOLO FINALIZADO</p>
+                        <ul>
+                            <li>La interacción con XOLO ha terminado para esta misión.</li>
+                        </ul>
+                    </div>
+                    <div class="role-card role-student">
+                        <h4>👦 Rol del Alumno</h4>
+                        <ul>
+                            <li>Tomar screenshot de su código en MakeCode.</li>
+                            <li>Tomar screenshot de su conversación con XOLO.</li>
+                            <li>Subir ambas evidencias a Gnius Space.</li>
+                            <li>Dar click en "Finalizar Misión".</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="slide-reference">
+                    <h4>📊 Diapositiva 5: ¡Misión Cumplida!</h4>
+                    <div class="slide-content">
+                        <p><strong>📸 Para terminar, sube tus evidencias a Gnius Space:</strong></p>
+                        <ol>
+                            <li>Una captura de pantalla de tu programa final en <strong>MakeCode</strong>.</li>
+                            <li>Una captura de pantalla de tu conversación con <strong>XOLO</strong> donde te dio tu GCS.</li>
+                        </ol>
+                        <p class="highlight-text" style="margin-top: 1rem;">¡No olvides dar click en el botón <strong>"Finalizar Misión"</strong> cuando termines!</p>
                     </div>
                 </div>
             </div>
         </main>
     </div>
-
     <script src="script.js"></script>
 </body>
-</html>
+</html></html>
